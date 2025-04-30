@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="kz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawiwi Care Shelter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-header">
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="bastybet.html">Біз туралы</a></li>
+        <li><a href="help.html">Көмек беру</a></li>
+        <li><a href="news.html">Жаңалықтар</a></li>
+        <li><a href="blog.html">Блог</a></li>
+      </ul>
+    </nav>
+    <img src="C:\Users\di1zz\OneDrive\Desktop\ЫЫЫЫЫ.jpg" alt="My Design" class="banner">
+</header>
+  <body class="main-page">
+  <main>
+    <input type="text" class="search" id="searchInput" placeholder="Іздеу 🔍">
+    <div class="card-container">
+    
+        <div class="pet-card" onclick="toggleInfo(this)">
+          <img src="C:\Users\di1zz\OneDrive\Desktop\муиза.jpg" alt="Мысық">
+          <h3>Муиза (мысық)</h3>
+          <button onclick="event.stopPropagation(); openForm('Муиза')">Асырап алу</button>
+          <div class="pet-details">
+            <p><strong>Жасы:</strong> 2.5 ай</p>
+            <p><strong>Тұқымы:</strong> Белгісіз</p>
+            <p><strong>Жынысы:</strong> Еркек</p>
+            <p><strong>Сипаттамасы:</strong> Өте белсенді, ойынқұмар. Кез келген адаммен тез тіл табысады. Тырнау, тістеу арқылы адамдармен және сүйікті ойыншықтарымен ойнағанды ұнатады. </p>
+          </div>
+        </div>
+      
+        <div class="pet-card" onclick="toggleInfo(this)">
+          <img src="C:\Users\di1zz\OneDrive\Desktop\ранпо.jpg" alt="Ит">
+          <h3>Ранпо (ит)</h3>
+          <button onclick="event.stopPropagation(); openForm('Ранпо')">Асырап алу</button>
+          <div class="pet-details">
+            <p><strong>Жасы:</strong> 3 ай</p>
+            <p><strong>Тұқымы:</strong> Бордер-колли</p>
+            <p><strong>Жынысы:</strong> Еркек</p>
+            <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды меңгерген, жаттықтыруға жақсы бағынады. Мінезі байсалды әрі мейірімді. </p>
+          </div>
+        </div>
+      
+        <div class="pet-card" onclick="toggleInfo(this)">
+          <img src="C:\Users\di1zz\OneDrive\Desktop\миффи.jpg" alt="Қоян">
+          <h3>Миффи (қоян)</h3>
+          <button onclick="event.stopPropagation(); openForm('Миффи')">Асырап алу</button>
+          <div class="pet-details">
+            <p><strong>Жасы:</strong> 12 ай</p>
+            <p><strong>Тұқымы:</strong> Джерси Вули</p>
+            <p><strong>Жынысы:</strong> Еркек</p>
+            <p><strong>Сипаттамасы:</strong> Адамдарға үйренген, бірақ жаңа ортаға бейімделуде уақытты талап етеді. Өзіне жайлы ортада тыныш отырады, басқа үй жануарларымен тіл табыса алады. </p>
+          </div>
+        </div>
+
+        <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\муркиз.jpg" alt="Мысық">
+            <h3>Муркиз (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Муркиз')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 2.3 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Еркек</p>
+              <p><strong>Сипаттамасы:</strong>Сергек, жұмсақ мінезді, тазалықты жақсы көреді. Бейтаныс адамдардан қорқады, бірақ агрессия көрсетпейді. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\люси.jpg" alt="Мысық">
+            <h3> Люси (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Люси')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 5 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Белсенді емес, кез келген адамдарға үйрене бермейді, тіл табысуда біраз уақыт талап етеді. Ақылды, тез үйренеді. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\leo.jpg" alt="Ит">
+            <h3> Лео (ит)</h3>
+            <button onclick="event.stopPropagation(); openForm('Лео')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 7 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong>Төзімді, балалармен ойнағанды ұнатады. Жаттықтыруға ыңғайлы, белсенділігі жоғары. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\Софи.jpg" alt="Мысық">
+            <h3> Софи (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Софи')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 5.4 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Өте ойынқұмар, басқа жануарлармен жақсы қарым-қатынаста, қоршаған ортасына деген қызығушылығы жоғары.  </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\Мурка.jpg" alt="Мысық">
+            <h3> Мурка (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Мурка')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 2 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Еркек </p>
+              <p><strong>Сипаттамасы:</strong> Жайлы мінезді, сипалағанды жақсы көреді. Жалғыз қалғанды ұнатпайды, үнемі басқалардың ортасында жүреді. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\Тигра.jpg" alt="Мысық">
+            <h3> Ричи (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Ричи')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 6,2 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Еркек </p>
+              <p><strong>Сипаттамасы:</strong> Сабырлы, адамдарға көп жақындамайды. Жаңа ортаға тез бейімделуге қабілетті.  </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Desktop\Мия.jpg" alt="Мысық">
+            <h3> Мия (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Мия')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 3.8 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\kusya.jpg" alt="Мысық">
+            <h3> Кузя (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Кузя')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 5 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Еркек </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+        
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\markiz.jpg" alt="Мысық">
+            <h3> Маркиз (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Маркиз')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 3.3 ай</p>
+              <p><strong>Тұқымы:</strong>Американская короткошерстная</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\fisia.jpg" alt="Мысық">
+            <h3> Фися (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Фися')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 4 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\руфус.jpg" alt="Ит">
+            <h3> Руфус (ит)</h3>
+            <button onclick="event.stopPropagation(); openForm('Руфус')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 2.9 ай</p>
+              <p><strong>Тұқымы:</strong>Голландский смоусхонд</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\Снуп.jpg" alt="Ит">
+            <h3> Снуп (ит)</h3>
+            <button onclick="event.stopPropagation(); openForm('Снуп')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 4.7 ай</p>
+              <p><strong>Тұқымы:</strong>Миниатюрный шнауцер</p>
+              <p><strong>Жынысы:</strong> Еркек </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\құтжол.jpg" alt="Ит">
+            <h3>Құтжол (ит)</h3>
+            <button onclick="event.stopPropagation(); openForm('Құтжол')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 4 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Еркек </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\абрикос.jpg" alt="Мысық">
+            <h3>Абрикос (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Абрикос')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 4 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\макс.jpg" alt="Ит">
+            <h3>Макс (ит)</h3>
+            <button onclick="event.stopPropagation(); openForm('Макс')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 3.5 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз</p>
+              <p><strong>Жынысы:</strong> Еркек </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\соня.jpg" alt="Мысық">
+            <h3>Соня (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Соня')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 3 ай</p>
+              <p><strong>Тұқымы:</strong>Персидская длинношертсная </p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+          <div class="pet-card" onclick="toggleInfo(this)">
+            <img src="C:\Users\di1zz\OneDrive\Documente\барсик.jpg" alt="Мысық">
+            <h3>Барсик (мысық)</h3>
+            <button onclick="event.stopPropagation(); openForm('Барсик')">Асырап алу</button>
+            <div class="pet-details">
+              <p><strong>Жасы:</strong> 4 ай</p>
+              <p><strong>Тұқымы:</strong>Белгісіз </p>
+              <p><strong>Жынысы:</strong> Ұрғашы </p>
+              <p><strong>Сипаттамасы:</strong> Ақылды, бірнеше командаларды біледі. Тамақты талғап жейді, көңіл бөлгенді ұнатады. </p>
+            </div>
+          </div>
+
+      </div>
+  </main>
+
+  <div id="adoptForm" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeForm()">&times;</span>
+      <h2>Анкетаны толтырыңыз</h2>
+      <p id="selectedPet"></p>
+      <form action="https://formspree.io/f/mdkgazlb" method="POST">
+        <label>Аты-жөніңіз:</label><br>
+        <input type="text" name="name" required><br><br>
+  
+        <label>Жасыңыз:</label><br>
+        <input type="number" name="age" required><br><br>
+  
+        <label>Телефон:</label><br>
+        <input type="tel" name="phone" required><br><br>
+  
+        <label>Неліктен асырағыңыз келеді?</label><br>
+        <textarea name="reason" required></textarea><br><br>
+  
+        <input type="hidden" name="selectedPet" id="selectedPetInput">
+  
+        <button type="submit">Жіберу</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+  <p>Телефон: +7 705 906 4516 </p>
+  <p>Электрондық пошта: <a href="mailto:info@pawiwi.com">info@pawiwi.com</a></p>
+  <p>Мекен-жай: Қабанбай батыр 8</p>
+  <p>&copy; 2025 Pawiwi Care Shelter</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

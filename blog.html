@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Блог - Pawiwi Care Shelter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-page">
+
+  <header class="header">
+    <ul class="nav-menu">
+      <li><a href="bastybet.html">Біз туралы</a></li>
+      <li><a href="help.html">Көмек беру</a></li>
+      <li><a href="news.html">Жаңалықтар</a></li>
+      <li><a href="index.html">Басты бет</a></li>
+    </ul>
+  </header>
+  
+  <section class="share-story">
+    <h2>Өз оқиғаңызбен бөлісіңіз</h2>
+    <form id="storyForm">
+      <label for="photo">Асырап алған жануарыңыздың фотосын жүктеңіз:</label>
+      <input type="file" id="photo" accept="image/*" required />
+      
+      <label for="text">Оқиғаңызды жазыңыз:</label>
+      <textarea id="text" rows="5" required></textarea>
+
+      <button type="submit">Жариялау</button>
+    </form>
+
+    <div id="userStories"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

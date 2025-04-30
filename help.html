@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Көмек беру - Pawiwi Care Shelter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="main-page">
+
+  <header class="header">
+    <ul class="nav-menu">
+      <li><a href="bastybet.html">Біз туралы</a></li>
+      <li><a href="index.html">Басты бет</a></li>
+      <li><a href="news.html">Жаңалықтар</a></li>
+      <li><a href="blog.html">Блог</a></li>
+    </ul>
+  </header>
+
+  <main>
+
+    <section style="text-align: center; padding: 30px;">
+      <h1>Қамқорлықпен көмектесіңіз</h1>
+      <p>Сіздің көмегіңіз жануарлардың өмірін жақсарта алады. Бізбен бірге олар үшін жарқын болашақ жасайық!</p>
+
+      <div style="margin: 20px 0;">
+        <p><strong>Жиналған қаражат:</strong> <span id="donation-amount">₸150,000</span> / ₸1,000,000</p>
+        <progress id="progress-bar" value="150000" max="1000000" style="width: 80%; height: 20px;"></progress>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <button onclick="openDonationPopup()" style="padding: 12px 24px; font-size: 16px;">Демеушілік ету</button>
+        <button onclick="openVolunteerForm()" style="padding: 12px 24px; font-size: 16px;">Ерікті болу</button>
+      </div>
+    </section>
+
+    <section style="padding: 40px;">
+      <h2>Неліктен демеушілік ету маңызды?</h2>
+      <p>Сіз жануарларға көмектесудің үш жолының бірін таңдай аласыз. Әрбір әрекет жануарлардың өмірін сақтап қалуға үлкен үлес қосады.</p>
+
+      <ul style="line-height: 2;">
+        <li>
+          <i class="fas fa-paw"></i>
+          <strong>Жануарды асырап алу:</strong> Бір жануарды қамқорлыққа алыңыз және оған жаңа үй сыйлаңыз. Олардың барлығы сүйіспеншілікке лайық!  
+          <br>
+          <button onclick="location.href='index.html'" style="margin-top: 10px;">Жануарларды көру</button>
+        </li>
+
+        <li>
+          <i class="fas fa-hand-holding-heart"></i>
+          <strong>Қаржылай көмек:</strong> Тікелей баспанамызға аударым жасап, жануарлардың өмірін сақтауға көмектесіңіз. Әрбір теңге олардың қауіпсіздігі мен тамағына жұмсалады.
+          <br>
+          <button onclick="openDonationPopup()" style="margin-top: 10px;">Қаржылай көмектесу</button>
+        </li>
+
+        <li>
+          <i class="fas fa-box"></i>
+          <strong>Заттай көмек:</strong> Азық-түлік, дәрі-дәрмек немесе керек-жарақтар беріп қолдау көрсетіңіз.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+<div id="donationModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeDonationModal()">&times;</span>
+    <h2>Қаржылай көмек</h2>
+    <form action="https://formspree.io/f/mdkgazlb" method="POST">
+      <label>Атыңыз:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Сома (₸):</label><br>
+      <input type="number" name="amount" required><br><br>
+
+      <label>Төлем әдісі:</label><br>
+      <select name="method">
+        <option>Kaspi</option>
+        <option>Halyk</option>
+        <option>Басқа</option>
+      </select><br><br>
+
+      <label>Хабарлама:</label><br>
+      <textarea name="message" maxlength="200" placeholder="Қаласаңыз, қысқа хабарлама қалдырыңыз..."></textarea><br><br>
+
+      <button type="submit">Жіберу</button>
+    </form>
+  </div>
+</div>
+
+<div id="volunteerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeVolunteerModal()">&times;</span>
+    <h2>Ерікті болу</h2>
+    <form action="https://formspree.io/f/mdkgazlb" method="POST">
+      <label>Атыңыз:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Жасыңыз:</label><br>
+      <input type="number" name="age" required><br><br>
+
+      <label>Байланыс (email/телефон):</label><br>
+      <input type="text" name="contact" required><br><br>
+
+      <label>Тұратын қалаңыз:</label><br>
+      <input type="text" name="city"><br><br>
+
+      <label>Қазіргі оқу/жұмыс орныңыз (егер бар болса):</label><br>
+      <input type="text" name="occupation"><br><br>
+
+      <label>Бұрын ерікті болып қызмет атқардыңыз ба? (Иә/Жоқ). Егер иә болса, қай жерде және қандай міндеттер атқардыңыз?</label><br>
+      <input type="text" name="experience"><br><br>
+
+      <label>Аптасына қанша сағат волонтерлік қызметке арнай аласыз?</label><br>
+      <input type="text" name="time"><br><br>
+
+      <label>Неліктен волонтер болғыңыз келеді?</label><br>
+      <input type="text" name="reason"><br><br>
+
+
+      <button type="submit">Жіберу</button>
+    </form>
+  </div>
+</div>
+<footer>
+  <p>Телефон: +7 705 906 4516 </p>
+  <p>Электрондық пошта: <a href="mailto:info@pawiwi.com">info@pawiwi.com</a></p>
+  <p>Мекен-жай: Қабанбай батыр 8</p>
+  <p>&copy; 2025 Pawiwi Care Shelter</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
